@@ -46,12 +46,8 @@
             <h4>Antifragility and feedback loops in the IT industry</h4>
             <p>
                 <small>Maximilien Riehl / <a href=mailto:max@flatmap.ninja>max@flatmap.ninja</a> / <a
-                        href="https://twitter.com/maximilienriehl">@maximilienriehl</a> / <a
                         href="https://github.com/mriehl">github.com/mriehl</a></small>
             </p>
-            <div>
-                <img src="img/scout24.png" class="stretch" style="border: none;"/>
-            </div>
         </section>
 
         <section>
@@ -59,16 +55,38 @@
                 <h2>Flight plan</h2>
                 <ul>
                 <div class="fragment">
-                  <li>Antifragility is a desirable property</li>
+                  <li>What's antifragility, what makes it interesting</li>
                 </div>
                 <div class="fragment">
-                  <li>We can't have it unless we change a lot</li>
+                  <li>Examples for antifragile systems</li>
                 </div>
                 <div class="fragment">
-                  <li>We need more DevOps-ish culture</li>
+                  <li>Practical applications, how does this apply to us?</li>
+                </div>
+                <div class="fragment">
+                  <li>Things we can do to improve</li>
                 </div>
                 </ul>
             </section>
+
+            <section class="fragments">
+                <h2>Disclaimers</h2>
+                <ul>
+                <div class="fragment">
+                  <li>This is just food for thought</li>
+                </div>
+                <div class="fragment">
+                  <li>There's no black and white in this topic</li>
+                </div>
+                <div class="fragment">
+                  <li>No easy answers</li>
+                </div>
+                <div class="fragment">
+                  <li>Try to think about how this impacts you and do what you want with it</li>
+                </div>
+                </ul>
+            </section>
+
             <section class="fragments">
                 <h2>A primer on antifragility</h2>
                 <div class="fragment"><img src="img/antifragile-book.jpg"/></div>
@@ -95,14 +113,11 @@
 
             <section class="fragments">
                 <h3>The fragile vs. black swan event</h3>
-                <img src="img/crate-fragile.jpg"/>
+                <img src="img/crate-fragile.png"/>
                 <div></div>
                 <ul>
                     <div class="fragment">
                         <li>Best case: crate remains unchanged</li>
-                    </div>
-                    <div class="fragment">
-                        <li>Worst case: crate has defects</li>
                     </div>
                 </ul>
             </section>
@@ -126,51 +141,63 @@
             </section>
 
             <section class="fragments">
+                <h3>Realistic antifragile systems</h3>
+            </section>
+
+            <section class="fragments">
                 <h3>Immune system vs black swan events</h3>
                 <img src="img/immune.jpg" class="stretch"/>
                 <p><font size="1">Image credit: DO11.10, GFDL</font></p>
             </section>
 
             <section class="fragments">
-                <h3>Thus, limitations</h3>
+                <h3>Immune system</h3>
                 <ul>
+                    <div class="fragment">
+                        <li>Antifragility as an emergent effect</li>
+                    </div>
                     <div class="fragment">
                         <li>Harm's only good up to a certain point</li>
                     </div>
                     <div class="fragment">
-                        <li>Antifragility is an emergent effect</li>
+                        <li>Reacts strongly to small harm (memory)</li>
                     </div>
                 </ul>
             </section>
 
             <section class="fragments">
-                <h4>Emergent effects in software - example</h4>
-                <div class="fragment"><img src="img/tensorflow.png"/></div>
-                <div class="fragment">
-                <pre><code data-trim data-noescape>
-                    auto output_mat = output->flat_outer_dims&lt;T&gt;();
-                </code></pre>
-                </div>
+                <h3>Forest fires or how to defeat antifragility</h3>
+                <img src="img/fire.jpg" class="stretch"/>
+                <ul>
+                    <div class="fragment">
+                        <li>Would like to prevent all forest fires</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Flammable material accumulates</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Black swan => much worse</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Small fires would auto-regulate (Feuerökologie)</li>
+                    </div>
+                </ul>
             </section>
-
-            <section class="fragments">
-                <h3>Antifragile system: evolution</h3>
-                <div class="fragment"><img src="img/evo1.png"/></div>
-                <div class="fragment"><img src="img/evo2.png"/></div>
-            </section>
-
 
             <section class="fragments">
                 <h3>Key insights</h3>
                 <ul>
                     <div class="fragment">
-                        <li>The antifragile slowly adapts to black swan events</li>
+                        <li>The antifragile can slowly adapt to black swan events</li>
                     </div>
                     <div class="fragment">
-                        <li>Relies on tinkering (mutation)</li>
+                        <li>Relies on some form of tinkering/probability (e.g. mutation, random fire)</li>
                     </div>
                     <div class="fragment">
                         <li>Pieces from the system <strong>must</strong> be fragile</li>
+                    </div>
+                    <div class="fragment">
+                      <li>Manual intervention can defeat fragility</li>
                     </div>
                 </ul>
             </section>
@@ -178,7 +205,7 @@
 
         <section>
             <section class="fragments">
-                <h2>Antifragility and feedback</h2>
+                <h2>Practical applications - how does this apply to us?</h2>
                 <div class="fragment"><img src="img/evo2.png"/></div>
                 <div class="fragment"><p><font color="red">This is a feedback loop!</font></p></div>
             </section>
@@ -188,19 +215,12 @@
                 <div class="fragment"><p>We should go to war!</p></div>
             </section>
             <section class="fragments">
-                <h4>The blindfolded immortal bus driver problem</h4>
-                <ul>
-                    <div class="fragment">
-                        <li>No problem finding a new job</li>
-                    </div>
-                    <div class="fragment">
-                        <li>No personal risk</li>
-                    </div>
-                    <div class="fragment">
-                        <li>No financial downside</li>
-                    </div>
-                </ul>
-                <div class="fragment"><h4><font color="red">Why would you learn from that experience?</font></h4></div>
+                <h3>Forecasts</h3>
+                <div class="fragment"><img src="img/crystal.jpg"/></div>
+                <div class="fragment"><p>Make forecast</p></div>
+                <div class="fragment"><p>Someone else acts based on that forecast</p></div>
+                <div class="fragment"><p>Black swan event (e.g. financial crisis)</p></div>
+                <div class="fragment"><p>Forecaster: "I knew it was coming!" + sells book</p></div>
             </section>
             <section class="fragments">
                 <h4>Feedback models (ethics)</h4>
@@ -232,10 +252,54 @@
                 </ul>
             </section>
             <section class="fragments">
-                <h3>The IT industry at large: no skin in the game</h3>
+                <h4>Feedback in IT - password leaks</h4>
+                <ul>
+                    <div class="fragment">
+                        <li>Dev writes password database</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Customer puts password in DB</li>
+                    </div>
+                    <div class="fragment">
+                        <li>DB is insecure</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Customer is harmed</li>
+                    </div>
+                </ul>
+                <div class="fragment"><h4><font color="red">No(t much) skin in the game!</font></h4></div>
             </section>
             <section class="fragments">
-                <h4>"Data-driven" not ideal</h4>
+                <h4>Case study 2: pager duty</h4>
+                <ul>
+                    <div class="fragment">
+                        <li>Dev builds alarm</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Alarm misfires (false positive)</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Someone else is paged in the middle of the night</li>
+                    </div>
+                <div class="fragment"><h4><font color="red">No(t much) skin in the game!</font></h4></div>
+                </ul>
+            </section>
+            <section class="fragments">
+                <h4>Getting some skin in the game: dogfooding</h4>
+                <ul>
+                    <div class="fragment">
+                        <li>Get woken up by your alarm</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Put your password in the password DB, use the product you're working on</li>
+                    </div>
+                </ul>
+            </section>
+            <section class="fragments">
+                <h3>The IT industry at large: what happens with no skin in the game</h3>
+            </section>
+            <section class="fragments">
+                <h4>The "Data-driven" fallacy</h4>
                 <div class="fragment">
                 <pre><code data-trim data-noescape>
                     &raquo; curl -s https://en.wikipedia.org/wiki/List_of_cognitive_biases \
@@ -251,7 +315,7 @@
                 </div>
             </section>
             <section class="fragments">
-                <h4>Armor plating engineer</h4>
+                <h4>Survivor bias</h4>
                 <div class="fragment">
                   <img src="img/plane.jpg" class="stretch" />
                 </div>
@@ -266,11 +330,35 @@
                   <img src="img/cargo-cult.jpg" class="stretch" />
                 </div>
                 <div class="fragment">
-                    We pick up the visible things (tools) but fail to examine the role they play.
+                    The most visible thing is not necessarily the cause of the desired effect
                 </div>
             </section>
             <section class="fragments">
-                <h4>Reproducibility in 1935</h4>
+                <h4>Rainmaker scam</h4>
+                <div class="fragment">
+                    <img src="img/rainmaker.jpg" class="stretch" />
+                </div>
+                <ul>
+                    <div class="fragment">
+                        <li>Company wants to improve</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Company pays for "devops transformation"</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Did "DevOps" solve the problems?</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Or did "wanting to implement DevOps" solve the problems?</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Maybe something/someone else solved the problems...</li>
+                    </div>
+                </ul>
+            </section>
+
+            <section class="fragments">
+                <h4>Reproducibility in 1935 (!)</h4>
                 <div class="fragment">
                   <blockquote>
                     Paper 1: X ➡ Rats do A
@@ -283,7 +371,12 @@
                 </div>
                 <div class="fragment">
                   <blockquote>
-                    Professor: Nope, X was already done.
+                    Feynman: Reproduce Paper 1 independently first
+                  </blockquote>
+                </div>
+                <div class="fragment">
+                  <blockquote>
+                    Professor: Just quote paper 1!
                   </blockquote>
                 </div>
                 <div class="fragment">
@@ -304,29 +397,12 @@
                     <li>from the pleasantness problem (do we want the spec)</li>
                   </div>
                 </ul>
-                <div class="fragment"><p>Isolating product from development still sounds like a good idea?</p></div>
+                <div class="fragment"><p>Isolating product from development sounds like a good idea?</p></div>
+                <div class="fragment"><p>Isolating product from development sounds like a good idea?</p></div>
             </section>
 
             <section class="fragments">
-                <h4>Rainmaker scam</h4>
-                <div class="fragment">
-                    <img src="img/rainmaker.jpg" class="stretch" />
-                </div>
-                <ul>
-                    <div class="fragment">
-                        <li>Did "DevOps" solve your problems?</li>
-                    </div>
-                    <div class="fragment">
-                        <li>Or did "wanting to implement DevOps" solve your problems?</li>
-                    </div>
-                    <div class="fragment">
-                        <li>Maybe something else solved your problems...</li>
-                    </div>
-                </ul>
-            </section>
-
-            <section class="fragments">
-                <h2>Issues holding us back</h2>
+                <h2>Issues without skin in the game</h2>
                 <ul>
                     <div class="fragment">
                         <li>Bad/no reproducibility</li>
@@ -338,7 +414,7 @@
                         <li>Separation of product and development</li>
                     </div>
                     <div class="fragment">
-                        <li>No or indirect harm due to bad decisions</li>
+                        <li>No real drive to improve</li>
                     </div>
                 </ul>
             </section>
@@ -356,16 +432,10 @@
                 </div>
             </section>
             <section class="fragments">
-                <h3>Rate fragility, not probability</h3>
-            </section>
-            <section class="fragments">
-                <h3>Optionality FTW</h3>
+                <h3>Optionality (Plan B) FTW for black swans</h3>
             </section>
             <section class="fragments">
                 <h3>Mistrust data by default</h3>
-                <div class="fragment">
-                <h5>Don't be the turkey</h5>
-                </div>
             </section>
             <section class="fragments">
                 <h2>Questions for the audience</h2>
@@ -377,7 +447,7 @@
                         <li>Cultural?</li>
                     </div>
                     <div class="fragment">
-                            <li>Technical?</li>
+                        <li>Technical?</li>
                     </div>
                 </ul>
                 <div class="fragment">
